@@ -80,6 +80,11 @@ package_data = {
     'milk.tests': ['data/*'],
     }
 
+required_packages = [
+  'numpy',
+  'scipy',
+]
+
 setup(name = 'milk',
       version = __version__,
       description = 'Machine Learning Toolkit',
@@ -93,6 +98,7 @@ setup(name = 'milk',
       package_data = package_data,
       ext_modules = ext_modules,
       test_suite = 'nose.collector',
+      requires = required_packages
       )
 
 
