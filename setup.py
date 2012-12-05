@@ -67,6 +67,7 @@ ext_modules = [
                 undef_macros=undef_macros,
                 define_macros=define_macros,
                 extra_compile_args=compiler_args,
+                include_dirs=['include']
                 )
         for key,sources in _extensions.items()
 ]
